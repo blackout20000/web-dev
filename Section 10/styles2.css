@@ -27,6 +27,10 @@ label {
     display: block;
 }
 
+section {
+    margin: 10px;
+}
+
 input, textarea, select {
    width: 100%;
    display: block;
@@ -49,7 +53,24 @@ textarea:focus {
     border-color: rgb(32,5,63);
 }
 
-button {
+.btn-class {
+    display: flex;
+}
+
+
+.btn-class1 {
+    display: block;
+    font: inherit;
+    background-color: white;
+    color: rgb(32,5,63);
+    border: 1px solid rgb(32,5,63);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: right;
+}
+
+.btn-class2 {
     display: block;
     font: inherit;
     background-color: rgb(32,5,63);
@@ -58,9 +79,10 @@ button {
     padding: 0.5rem 1.5rem;
     border-radius: 4px;
     cursor: pointer;
+    text-align: right;
 }
 
-button:hover {
+.btn-class2:hover {
     background-color: rgb(52,14,95);
     border-color: rgb(52,14,95);
 }
