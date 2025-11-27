@@ -41,3 +41,5 @@ function updateRemainingCharacters(event) {
 // 'input' 이벤트는 키보드 입력, 붙여넣기, 잘라내기 등 input 값이 변할 때마다 실행된다.
 // 사용자가 텍스트를 변경할 때마다 updateRemainingCharacters 함수가 실행된다.
 productNameInputElement.addEventListener('input', updateRemainingCharacters);
+
+
