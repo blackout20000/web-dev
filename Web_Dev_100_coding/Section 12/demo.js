@@ -35,6 +35,19 @@ function updateRemainingCharacters(event) {
     // id='remaining-chars' 요소 내부의 텍스트를 남은 글자 수로 업데이트한다.
     // innerText나 textContent를 사용해 문자열을 표시할 수 있다.
     remainingCharsElement.textContent = remainingCharacters;
+
+    if (remainingCharacters <= 0) {
+        remainingCharsElement.classList.add('error');
+        productNameInputElement.classList.add('error');
+    } else if (remainingCharacters <= 10) {
+        remainingCharsElement.classList.add('warning');
+        productNameInputElement.classList.add('warning');
+        remainingCharsElement.classList.remove('error');
+        productNameInputElement.classList.remove('error');
+    } else {
+        remainingCharsElement.classList.remove('warning');
+        productNameInputElement.classList.remove('warning');
+    }
 }
 
 // productNameInputElement에 'input' 이벤트 리스너를 등록한다.
