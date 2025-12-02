@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="title"> Hello, <span style="display:none">Javascript!</span></p>
+
+    <p id="textContent"></p>
+    <p id="innerText"></p>
+    <p id="innerHTML"></p>
+    <script>
+        const text1 = document.getElementById("title").textContent;
+        const text2 = document.getElementById("title").innerText;
+        const text3 = document.getElementById("title").innerHTML;
+        
+        console.log(text1);
+        console.log(text2);
+        console.log(text3);
+
+        const id1 = document.querySelector("#textContent").textContent = `<strong>textContent</scrong> 속성`;
+        const id2 = document.querySelector("#innerText").innerText = `<strong>innerText</scrong> 속성`;
+        const id3 = document.querySelector("#innerHTML").innerHTML = `<strong>innerHTML</scrong> 속성`;
+
+        console.log(id1);
+        console.log(id2);
+        console.log(id3);
+</script>
+</body>
+</html>
